@@ -1,0 +1,1 @@
+	gcc -m32 -g -o gestioneVettore.c gestioneVettore.s
