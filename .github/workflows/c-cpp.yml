@@ -5,13 +5,19 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
+
+
     steps:
+    - name: Install gcc-multilib
+      run:
+          sudo apt update
+          sudo apt install gcc-multilib -y
     - uses: actions/checkout@v3
     #- name: configure
     #  run: ./configure
