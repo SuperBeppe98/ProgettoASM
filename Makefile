@@ -1,1 +1,2 @@
-	gcc -m32 -g -o gestioneVettore.c gestioneVettore.s
+gestioneVettore:
+	gcc -m32 -g -o gestioneVettore gestioneVettore.s
