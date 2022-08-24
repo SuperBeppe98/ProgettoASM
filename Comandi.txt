@@ -1,8 +1,0 @@
-gcc -m32 -g -o vettore GestioneVettore.s
-
-sudo apt install gcc-multilib
-
-as --32 -o vettore.o GestioneVettore.s
-ld -m elf_i386 -o vettore vettore.o
-
-tar cvfz filename.tgz filename
